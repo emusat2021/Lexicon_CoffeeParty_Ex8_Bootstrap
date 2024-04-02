@@ -1,9 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /* General Settings */
+:root {
+    --background-color: #cc5353;
+    --brown-bg-color: #C4A484;
+    --favobjects-color: brown;
+    --favobjects-secondary-color: #f08628;
+    --favobjects: 1.5em;
+    --favobjects-small: 1.3em;
+    --favobjects-small-320: 1.2em;
+}
 *{
     margin: 0;
     padding: 0;
     border: 0; 
+}
+html {
+    position: relative;
+    min-height: 100%;
 }
 body {
     background-color: gainsboro; 
@@ -16,23 +29,92 @@ body {
     background-attachment: fixed;
     margin-bottom: 100px;
   }
+  /* .primary-bg-color {
+    background-color: var(--background-color);
+  } */
+  /* separator div to make a clear demarcation between sections */
+ .separator {
+    height: 50px;
+  }
+   /* h1 style */
+ .heading1 {
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  /* About sections */
+.transparent-text {
+    color: var(--favobjects-color);
+    font-weight: bold; 
+}
+  #section-about, #section-products, #section-products{
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .text-about {
+    width: 85%;
+  }
+  .about-images {
+    width: 75%;
+    border:0px solid #fff;
+    box-shadow: 5px 5px 5px #101010;
+  }
+  .title-card {
+    padding-bottom: 5px;
+  }
+  .block-divider {
+    background-color: white;
+  }
   .nav-item a {
     text-transform: uppercase;
   }
-  
   .nav-link, .navbar-brand {
     color: #fff !important;
     letter-spacing: 2px;
   }
-  
   .navbar-toggler {
     background-color: #fff;
   }
-  
-  .navbar-custom {
-    background-color: rgb(0, 26, 53); 
+  .navbar-custom, .btn-readmore{
+    background-color: var(--brown-bg-color); 
   }
   .dropdown-menu-custom {
-    background-color: rgb(0, 26, 53);
+    background-color: var(--brown-bg-color);
     width: 20rem;
+  }
+  /*Back to top button. Idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/css/style.css*/
+.btt-button {
+    position: fixed;
+    height: 2.6rem;
+    width: 2.6rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    border-radius: .4rem;
+    /* background-color: #fcfcfc; */
+    background-color: green;
+
+    display: none;
+    z-index: 999999999;
+  }
+  
+  .btt-button:hover {
+    /* background-color: #ebebebfd; */
+    background-color: greenyellow;
+
+  }
+  .btt-link{
+    cursor: pointer;
+  }
+/* coffee image land section */
+/* image taken from https://www.vecteezy.com/photo/9362714-fresh-coffee-beans-on-canvas-texture-background*/
+.coffee-party-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: url("../images/coffee-first1.jpg") no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 75vh;
   }

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Coffee Party a company that deliver coffee and coffee machines to other companies">
     <meta name="keywords" content="coffee, machines, deliver, party">
@@ -9,7 +10,9 @@
     <title>Coffee Party</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </head>
 <body>
   <header>
@@ -37,6 +40,12 @@
       </div>
     </nav>
   </header>
+    <!-- BACK TO TOP BUTTON -->
+    <div class="btt-button shadow-sm border border-black" id="back-to-top-btn">
+      <a class="btt-link d-flex h-100" title="Back to Top">
+          <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+      </a>	
+    </div>
     <!-- Coffee image section -->
     <section class="coffee-party-container container-fluid">
       <h3 class="text-center transparent-text">Bringing the best coffee products<br>closer to you!</h3>
@@ -49,20 +58,20 @@
       <div class="row">
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-3 d-flex justify-content-center">
               <div class="card shadow primary-bg-color text-about">
-                  <h2 class="heading1"><i class="fas fa-building pr-2"></i> Who we are...</h1>
+                  <h2 class="heading1"><i class="fas fa-building pr-2"></i> Who we are...</h2>
                   <p class="text-center my-auto">
                       Coffee Party ia a company who brings people in the world of coffee and coffee machines.<br>
                   </p>
               </div>
           </div>
           <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-3 d-flex justify-content-center primary-bg-color">
-              <img src="assets/images/people.jpg" alt="people with telescope" class="img-fluid about-image-people">
+              <img src="assets/images/people.jpg" alt="two people making coffee in shop" class="img-fluid about-images">
           </div>
       </div>
       <div class="row">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-3 d-flex justify-content-center">
             <div class="card shadow primary-bg-color text-about">
-              <h2 class="heading1"><i class="fas fa-heart pr-2"></i> What do we do...</h1>
+              <h2 class="heading1"><i class="fas fa-heart pr-2"></i> What do we do...</h2>
                 <p class="text-center my-auto">
                   At Coffee Party, we're passionate about two things: exceptional coffee and cutting-edge coffee machines.<br>
                   Our mission is simple: to provide you with the finest coffee experience right in the comfort of your own home or office.
@@ -70,13 +79,13 @@
             </div>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-3 d-flex justify-content-center primary-bg-color">
-            <img src="assets/images/maschine-coffee.jpg" alt="people with telescope" class="img-fluid about-image-people">
+            <img src="assets/images/maschine-coffee.jpg" alt="coffee machine with coffee cups" class="img-fluid about-images">
         </div>
     </div>
     <div class="row">
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-3 d-flex justify-content-center">
           <div class="card shadow primary-bg-color text-about">
-            <h2 class="heading1"><i class="fas fa-crown pr-2"></i> Why us...</h1>
+            <h2 class="heading1"><i class="fas fa-crown pr-2"></i> Why us...</h2>
               <p class="text-center my-auto">
                 With our seamless delivery service and unwavering commitment to customer satisfaction,<br>
                 Coffee Party guarantees that every cup of coffee brewed in your home or office will be an experience<br>
@@ -84,20 +93,111 @@
               </p>
           </div>
       </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-3 d-flex justify-content-center primary-bg-color">
+        <img src="assets/images/coffee-party.jpg" alt="coffee beans image" class="img-fluid about-images">
+      </div>
   </div>
   <div class="row">
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-3 d-flex justify-content-center">
         <div class="card shadow primary-bg-color text-about">
-          <h2 class="heading1"><i class="fas fa-gifts pr-2"></i> Welcome to our Party...</h1>
+          <h2 class="heading1"><i class="fas fa-gifts pr-2"></i> Welcome to our Party...</h2>
             <p class="text-center my-auto">
               Join us for a morning of caffeine delights, delightful conversations, and unforgettable experiences.<br>
               Don't miss out on the ultimate coffee celebration!
             </p>
         </div>
     </div>
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-3 d-flex justify-content-center primary-bg-color">
+      <img src="assets/images/coffee-party1.jpg" alt="coffee party bar image" class="img-fluid about-images">
+    </div>
   </div>
   </div>
   </div>
   <!-- /ABOUT -->
+  <!-- PRODUCTS -->
+  <div id="section-products">
+    <div class="separator"></div>
+    <h1 class="heading1"><i class="fas fa-toolbox pr-2"></i> OUR PRODUCTS</h1>
+    <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center p-3">
+        <div class="shadow">
+            <h2 class="title-card">COFFEE MACHINES</h2>
+            <img src="assets/images/coffee-machines.jpg" alt="coffee machines image" class="img-fluid pb-2"><br>
+            <div class="collapse w-100 text-center" id="collapse-card3">
+                <div class="card card-body bg-transparent">
+                    <img src="assets/images/delonghi-eletta.jpg" alt="delonghi eletta machine image"><br>
+                    <p>
+                        <!-- paragraph taken from https://www.delonghi.com -->
+                        Behind the sophisticated dark gray front panel, there are more than 50 hot, 
+                        cold and cold brew drinks to discover with De'Longhi's new automatic coffee maker Eletta Explore.<br>
+                        Enjoy automatic hot milk foam thanks to LatteCrema Hot Technology* as well as refreshing cold
+                        coffee and cold brew drinks with LatteCrema Cool* and Cold Extraction Technologies, both at home
+                        and on the go with the practical To-Go function.
+                    </p>
+                    <a href="https://www.delonghi.com/sv-se/automatisk-kaffebryggare-eletta-explore-ecam452-67-g/p/ECAM452.67.G" title="DeLonghi" target="_blank">DeLonghi - More info and price</a>
+                    <hr class="block-divider block-divider--short">
+                    <img src="assets/images/jura-E8.jpg" alt="jura E8 coffee machine image"><br>
+                    <p>
+                        <!-- paragraph taken from https://se.jura.com -->
+                        The latest E8 generation meets the high demands placed on the further development of JURA's
+                        most successful fully automatic coffee machine in all respects.<br>
+                        It conjures up fantastic coffee results, impresses with its simple operation and makes an
+                        impression with its modern, slim design.
+                    </p>
+                    <a href="https://se.jura.com/sv/kaffe-for-hushallsbruk/kaffemaskiner/E8-Dark-Inox-EC-15583/Support" title="Jura E8" target="_blank">Jura E8 - More info and price</a>
+                    <hr class="block-divider block-divider--short">
+                </div>
+            </div>
+            <button class="btn btn-light btn-readmore" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-card3" aria-expanded="false" aria-controls="collapse-card3">Read more</button>
+        </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center p-3">
+      <div class="shadow">
+        <h2 class="title-card">COFFEE PARTY</h2>
+        <img src="assets/images/coffee-party1.jpg" alt="coffee bar image" class="img-fluid pb-2"><br>
+        <div class="collapse w-100 text-center" id="collapse-card3">
+            <div class="card card-body bg-transparent">
+            <h2 class="heading1"><i class="fas fa-gifts pr-2"></i> Welcome to our Party as a COMPANY</h2>
+                <p>
+                  Join us as we celebrate our valued partnerships and toast to continued success.<br>
+                  Don't miss this opportunity to sip, savor, and connect!
+                </p>
+                <hr class="block-divider block-divider--short">
+                <h2 class="heading1"><i class="fas fa-gifts pr-2"></i> Welcome to our Party as a Private Person</h2>
+                <p>
+                  Join us for a delightful gathering filled with good company, great conversations, and, of course, the finest coffee.<br>
+                  Reserve your spot today!
+                </p>
+                <hr class="block-divider block-divider--short">
+            </div>
+        </div>
+        <button class="btn btn-light btn-readmore" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-card3" aria-expanded="false" aria-controls="collapse-card3">Read more</button>
+    </div>
+    </div>
+    </div>
+</div>
+</div>  
+<!-- /PRODUCTS -->
+<!-- CONTACTS -->
+<div id="section-contact">
+  <div class="separator"></div>
+  <h1 class="heading1"><i class="fas fa-home pr-2"></i>CONTACT</h1>
+  <div class="container">
+  <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-3 d-flex justify-content-center">
+          <div class="card shadow primary-bg-color text-about">
+              <p class="text-center my-auto">
+                  CONTACT text
+              </p>
+          </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-3 d-flex justify-content-center primary-bg-color">
+          <img src="#" alt="#" class="img-fluid about-images">
+      </div>
+  </div>
+  </div>
+</div>
+<!-- /CONTACTS -->
 </body>
 </html>
