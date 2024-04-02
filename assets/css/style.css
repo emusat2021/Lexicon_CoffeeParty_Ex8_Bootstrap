@@ -29,9 +29,6 @@ body {
     background-attachment: fixed;
     margin-bottom: 100px;
   }
-  /* .primary-bg-color {
-    background-color: var(--background-color);
-  } */
   /* separator div to make a clear demarcation between sections */
  .separator {
     height: 50px;
@@ -81,7 +78,6 @@ body {
     background-color: var(--brown-bg-color);
     width: 20rem;
   }
-  /*Back to top button. Idea taken from: https://github.com/irinatu17/Holiday-Planner/blob/master/assets/css/style.css*/
 .btt-button {
     position: fixed;
     height: 2.6rem;
@@ -89,21 +85,10 @@ body {
     bottom: 0.5rem;
     right: 0.5rem;
     border-radius: .4rem;
-    /* background-color: #fcfcfc; */
-    background-color: green;
-
     display: none;
     z-index: 999999999;
   }
-  
-  .btt-button:hover {
-    /* background-color: #ebebebfd; */
-    background-color: greenyellow;
 
-  }
-  .btt-link{
-    cursor: pointer;
-  }
 /* coffee image land section */
 /* image taken from https://www.vecteezy.com/photo/9362714-fresh-coffee-beans-on-canvas-texture-background*/
 .coffee-party-container {
